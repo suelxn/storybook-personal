@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Design System ── Storybook
 
-## Getting Started
+Este repositório centraliza o desenvolvimento isolado, os testes visuais e a documentação viva de todos os componentes de interface (UI) do Design System que estou desenvolvendo no Figma. 
 
-First, run the development server:
+Através do Storybook, é possível garantir consistência visual, acessibilidade e agilidade para o desenvolvimento de produtos.
 
-```bash
+## 🚀 Tecnologias Utilizadas
+
+O projeto foi estruturado utilizando a stack moderna de desenvolvimento frontend:
+
+* **Next.js** (Framework React principal)
+* **Vite** (Bundler de alto desempenho para o ambiente do Storybook)
+* **React** (Biblioteca de interface)
+* **TypeScript** (Tipagem estática e segurança no código)
+* **Tailwind CSS** (Estilização baseada em utilitários e design tokens)
+
+---
+
+## 🐧 Ambiente de Desenvolvimento (Linux)
+
+Este projeto está sendo construído e mantido utilizando o sistema operacional **Linux (Mint Cinnamon 22.3)**. 
+
+Por conta disso, o repositório pode conter algumas pastas, dependências ocultas ou arquivos de configuração específicos. Eles foram incluídos para garantir a compatibilidade do ambiente de compilação, permitindo que o Storybook e o compilador de estilos rodem perfeitamente na arquitetura Linux.
+
+---
+
+## 🛠️ Como Iniciar o Projeto
+
+Siga os passos abaixo para rodar o ambiente de desenvolvimento local.
+
+### Pré-requisitos
+
+Certifique-se de ter o Node.js instalado em sua máquina.
+
+### Instalação
+
+No diretório raiz do projeto, instale as dependências:
+
+npm install
+# ou usando pnpm / yarn
+pnpm install
+
+### Executando o Storybook
+
+Para iniciar o servidor do Storybook e visualizar o catálogo de componentes interativos:
+
+npm run storybook
+# ou
+pnpm storybook
+
+O ambiente será aberto automaticamente no seu navegador, geralmente no endereço http://localhost:6006.
+
+### Executando o projeto Next.js
+
+Caso precise rodar a aplicação principal do Next.js paralelamente:
+
 npm run dev
-# or
-yarn dev
-# or
+# ou
 pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação estará disponível em http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 Estrutura de Pastas
 
-## Learn More
+Para manter o ecossistema organizado, os componentes e suas respectivas histórias devem seguir a estrutura:
 
-To learn more about Next.js, take a look at the following resources:
+(em construção)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 Scripts Disponíveis
 
-## Deploy on Vercel
+No arquivo package.json, os principais comandos disponíveis são:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* npm run storybook: Inicia o ambiente local do Storybook na porta 6006.
+* npm run build-storybook: Gera a versão estática e otimizada do Storybook para deploy e homologação.
+* npm run dev: Inicia o servidor de desenvolvimento do Next.js.
+* npm run build: Compila a aplicação Next.js para produção.
