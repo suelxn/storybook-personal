@@ -1,4 +1,4 @@
-# Design System ── Storybook
+# Design System - Storybook
 
 Este repositório centraliza o desenvolvimento isolado, os testes visuais e a documentação viva de todos os componentes de interface (UI) do Design System que estou desenvolvendo no Figma. 
 
@@ -14,7 +14,6 @@ O projeto foi estruturado utilizando a stack moderna de desenvolvimento frontend
 * **TypeScript** (Tipagem estática e segurança no código)
 * **Tailwind CSS** (Estilização baseada em utilitários e design tokens)
 
----
 
 ## 🐧 Ambiente de Desenvolvimento (Linux)
 
@@ -22,7 +21,6 @@ Este projeto está sendo construído e mantido utilizando o sistema operacional 
 
 Por conta disso, o repositório pode conter algumas pastas, dependências ocultas ou arquivos de configuração específicos. Eles foram incluídos para garantir a compatibilidade do ambiente de compilação, permitindo que o Storybook e o compilador de estilos rodem perfeitamente na arquitetura Linux.
 
----
 
 ## 🛠️ Como Iniciar o Projeto
 
@@ -37,7 +35,7 @@ Certifique-se de ter o Node.js instalado em sua máquina.
 No diretório raiz do projeto, instale as dependências:
 
 npm install
-# ou usando pnpm / yarn
+ou usando pnpm / yarn
 pnpm install
 
 ### Executando o Storybook
@@ -45,7 +43,7 @@ pnpm install
 Para iniciar o servidor do Storybook e visualizar o catálogo de componentes interativos:
 
 npm run storybook
-# ou
+ou
 pnpm storybook
 
 O ambiente será aberto automaticamente no seu navegador, geralmente no endereço http://localhost:6006.
@@ -55,20 +53,16 @@ O ambiente será aberto automaticamente no seu navegador, geralmente no endereç
 Caso precise rodar a aplicação principal do Next.js paralelamente:
 
 npm run dev
-# ou
+ou
 pnpm dev
 
 A aplicação estará disponível em http://localhost:3000.
-
----
 
 ## 📂 Estrutura de Pastas
 
 Para manter o ecossistema organizado, os componentes e suas respectivas histórias devem seguir a estrutura:
 
 (em construção)
-
----
 
 ## 📄 Scripts Disponíveis
 
